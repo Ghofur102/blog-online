@@ -6,17 +6,24 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
 
     public function signUp_process(Request $request){
 
-        $request->validate([
-            'username' =>'required',
-            'email' =>'required',
-            'password' => 'required'
+    // Buat validator manual
+        $validator = Validator::make($request->all(), [
+            'username' => 'required',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:6'
         ]);
+
+    // Periksa apakah validasi gagal
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
 
         User::create([
             'username' => $request->username,
@@ -25,23 +32,28 @@ class AuthController extends Controller
 
         ]);
 
-        return redirect()->route('login')->with('success', 'signed up successfully');
+        return redirect()->route('#')->with('success', 'signed in successfully');
 
         }
 
     public function signIn_process(Request $request){
 
-        $request->validate([
-            'email' =>'required|email',
+    // Buat validator manual
+        $validator = Validator::make($request->all(),[
+            'email' =>'required|email|unique:users,email',
             'password' => 'required|min:8'
         ]);
+    // Periksa apakah validasi gagal
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
 
         $data=[
             'email' =>$request->email,
             'password' =>$request->password
         ];
         if(Auth::attempt($data)){
-            return redirect()->route('/')->with('success', 'signed in successfully');
+            return redirect()->route('#')->with('success', 'signed in successfully');
           }else{
             return redirect()->back()->with('error','Your email or password is incorrect!');
           }
@@ -51,6 +63,6 @@ class AuthController extends Controller
         auth()->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('/')->with('success', 'logged out successfully');
+        return redirect()->route('#')->with('success', 'logged out successfully');
     }
 }
