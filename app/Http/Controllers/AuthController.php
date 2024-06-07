@@ -10,8 +10,23 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    public function signUpLayout()
+    {
+        return view('auth.signup');
+    }
 
-    public function signUp_process(Request $request)
+    public function signInLayout()
+    {
+        return view('auth.signin');
+    }
+
+    public function verifyLayout()
+    {
+        return view('auth.verify');
+    }
+
+
+    public function signUpProcess(Request $request)
     {
 
         // Buat validator manual
@@ -36,7 +51,7 @@ class AuthController extends Controller
         return redirect()->route('#')->with('success', 'signed in successfully');
     }
 
-    public function signIn_process(Request $request)
+    public function signInProcess(Request $request)
     {
 
         // Buat validator manual
