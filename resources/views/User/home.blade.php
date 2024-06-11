@@ -27,4 +27,80 @@
         </div>
     </div>
     <!-- Jumbotron End -->
+
+    <!-- Category Start -->
+    <div class="category my-5 mx-5">
+        <h3 class="text-decoration-underline">Category</h3>
+        <h2>What do you want to Learn?</h2>
+        <div class="list-category">
+            <div class="d-flex">
+                <div class="card" style="width:32rem;">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{ asset('pemandangan.jpg') }}" class="card-img-top card-img-bottom"
+                                    alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="mx-2 my-2">
+                                    <div>Writer Name | 11 juni 2024 </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Judul Blog</h4>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                                        </svg>
+                                    </div>
+                                    <div class="">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit
+                                            amet consectetur adipisicing elit. Eaque, tempora?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category End -->
+
+    <!-- Update Start -->
+    <div class="category my-5 mx-5">
+        <h3 class="text-decoration-underline">Update</h3>
+        <h2>What's New?</h2>
+        <div class="list-blog">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div class="mx-2 my-2">
+                                <div>Writer Name | 11 juni 2024 </div>
+                                <div class="d-flex justify-content-between">
+                                    <h4>Judul Blog</h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                                    </svg>
+                                </div>
+                                <div class="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit
+                                        amet consectetur adipisicing elit. Eaque, tempora?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Update End -->
 @endsection
