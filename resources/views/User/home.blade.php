@@ -37,9 +37,13 @@
                 <div class="card mx-2 mb-2" style="min-width:32rem;">
                     <div class="">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6" style="position:relative;">
                                 <img src="{{ asset('pemandangan.jpg') }}" class="card-img-top card-img-bottom"
                                     alt="">
+                                <div class="" style="position: absolute;bottom:5px;left:15px;">
+                                    <button class="btn btn-primary m-1">Article</button>
+                                    <button class="btn btn-primary m-1">Article</button>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <div class="mx-2 my-2">
@@ -66,9 +70,13 @@
                 <div class="card mx-2 mb-2" style="min-width:32rem;">
                     <div class="">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6" style="position:relative;">
                                 <img src="{{ asset('pemandangan.jpg') }}" class="card-img-top card-img-bottom"
                                     alt="">
+                                <div class="" style="position: absolute;bottom:5px;left:15px;">
+                                    <button class="btn btn-primary m-1">Article</button>
+                                    <button class="btn btn-primary m-1">Article</button>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <div class="mx-2 my-2">
@@ -95,9 +103,13 @@
                 <div class="card mx-2 mb-2" style="min-width:32rem;">
                     <div class="">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6" style="position:relative;">
                                 <img src="{{ asset('pemandangan.jpg') }}" class="card-img-top card-img-bottom"
                                     alt="">
+                                <div class="" style="position: absolute;bottom:5px;left:15px;">
+                                    <button class="btn btn-primary m-1">Article</button>
+                                    <button class="btn btn-primary m-1">Article</button>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <div class="mx-2 my-2">
@@ -124,9 +136,13 @@
                 <div class="card mx-2 mb-2" style="min-width:32rem;">
                     <div class="">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6" style="position:relative;">
                                 <img src="{{ asset('pemandangan.jpg') }}" class="card-img-top card-img-bottom"
                                     alt="">
+                                <div class="" style="position: absolute;bottom:5px;left:15px;">
+                                    <button class="btn btn-primary m-1">Article</button>
+                                    <button class="btn btn-primary m-1">Article</button>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <div class="mx-2 my-2">
@@ -163,8 +179,15 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
                     <div class="card" style="max-width: 22rem;">
-                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
-                            alt="...">
+                        <div class="" style="position: relative;">
+                            <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                                alt="...">
+                            <div class="" style="position: absolute;bottom:5px;left:5px;">
+                                <button class="btn btn-primary m-1">Article</button>
+                                <button class="btn btn-primary m-1">Article</button>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <div class="mx-2 my-2">
                                 <div>Writer Name | 11 juni 2024 </div>
@@ -188,8 +211,15 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
                     <div class="card" style="max-width: 22rem;">
-                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
-                            alt="...">
+                        <div class="" style="position: relative;">
+                            <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                                alt="...">
+                            <div class="" style="position: absolute;bottom:5px;left:5px;">
+                                <button class="btn btn-primary m-1">Article</button>
+                                <button class="btn btn-primary m-1">Article</button>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <div class="mx-2 my-2">
                                 <div>Writer Name | 11 juni 2024 </div>
@@ -213,8 +243,15 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
                     <div class="card" style="max-width: 22rem;">
-                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
-                            alt="...">
+                        <div class="" style="position: relative;">
+                            <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                                alt="...">
+                            <div class="" style="position: absolute;bottom:5px;left:5px;">
+                                <button class="btn btn-primary m-1">Article</button>
+                                <button class="btn btn-primary m-1">Article</button>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <div class="mx-2 my-2">
                                 <div>Writer Name | 11 juni 2024 </div>
@@ -238,8 +275,15 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
                     <div class="card" style="max-width: 22rem;">
-                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
-                            alt="...">
+                        <div class="" style="position: relative;">
+                            <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                                alt="...">
+                            <div class="" style="position: absolute;bottom:5px;left:5px;">
+                                <button class="btn btn-primary m-1">Article</button>
+                                <button class="btn btn-primary m-1">Article</button>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <div class="mx-2 my-2">
                                 <div>Writer Name | 11 juni 2024 </div>
@@ -263,8 +307,15 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
                     <div class="card" style="max-width: 22rem;">
-                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
-                            alt="...">
+                        <div class="" style="position: relative;">
+                            <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                                alt="...">
+                            <div class="" style="position: absolute;bottom:5px;left:5px;">
+                                <button class="btn btn-primary m-1">Article</button>
+                                <button class="btn btn-primary m-1">Article</button>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <div class="mx-2 my-2">
                                 <div>Writer Name | 11 juni 2024 </div>
@@ -288,8 +339,15 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
                     <div class="card" style="max-width: 22rem;">
-                        <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
-                            alt="...">
+                        <div class="" style="position: relative;">
+                            <img src="{{ asset('pemandangan.jpg') }}" style="height: 12rem;" class="card-img-top"
+                                alt="...">
+                            <div class="" style="position: absolute;bottom:5px;left:5px;">
+                                <button class="btn btn-primary m-1">Article</button>
+                                <button class="btn btn-primary m-1">Article</button>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <div class="mx-2 my-2">
                                 <div>Writer Name | 11 juni 2024 </div>
@@ -311,6 +369,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
