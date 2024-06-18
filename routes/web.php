@@ -6,13 +6,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('User.home');
-});
+})->name('user.home');
 
 
-Route::get('/signup',[AuthController::class,'signUpLayout'])->name('signUpLayout');
-Route::get('/signin',[AuthController::class,'signInLayout'])->name('signInLayout');
-Route::post('/signUp_process',[AuthController::class,'signUpProcess'])->name('signUpProcess');
-Route::post('/signIn_process',[AuthController::class,'signInProcess'])->name('signInProcess');
+Route::get('/signup',[AuthController::class,'signUpLayout'])->name('signup.layout');
+Route::get('/signin',[AuthController::class,'signInLayout'])->name('signin.layout');
+Route::post('/signup_process',[AuthController::class,'signUpProcess'])->name('signup.process');
+Route::post('/signin_process',[AuthController::class,'signInProcess'])->name('signin.process');
 
 // rute untuk lupa password
 Route::get('/forgot-password', function () {

@@ -33,7 +33,8 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(), [
             'username' => 'required',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:6'
+            'password' => 'required|min:6',
+            'confirm_password' => 'required|same:password',
         ]);
 
         // Periksa apakah validasi gagal
@@ -45,19 +46,17 @@ class AuthController extends Controller
             'username' => $request->username,
             'email' => $request->email,
             'password' => Hash::make($request->password)
-
         ]);
 
-        return redirect()->route('#')->with('success', 'signed in successfully');
+        return redirect()->route('signin.layout')->with('success', 'Signed up successfully');
     }
 
     public function signInProcess(Request $request)
     {
-
         // Buat validator manual
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:8'
+            'email' => 'required|email',
+            'password' => 'required|min:6'
         ]);
         // Periksa apakah validasi gagal
         if ($validator->fails()) {
@@ -69,9 +68,9 @@ class AuthController extends Controller
             'password' => $request->password
         ];
         if (Auth::attempt($data)) {
-            return redirect()->route('#')->with('success', 'signed in successfully');
+            return redirect()->route('user.home')->with('success', 'signed in successfully');
         } else {
-            return redirect()->back()->with('error', 'Your email or password is incorrect!');
+            return redirect()->back()->with('error', 'Your email or password is incorrect!')->withInput();
         }
     }
 
