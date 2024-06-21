@@ -20,11 +20,6 @@ class AuthController extends Controller
         return view('auth.signin');
     }
 
-    public function verifyLayout()
-    {
-        return view('auth.verify');
-    }
-
 
     public function signUpProcess(Request $request)
     {
@@ -42,11 +37,13 @@ class AuthController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        User::create([
+        $user = User::create([
             'username' => $request->username,
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
+
+        $user->sendEmailVerificationNotification();
 
         return redirect()->route('signin.layout')->with('success', 'Signed up successfully');
     }
@@ -68,7 +65,7 @@ class AuthController extends Controller
             'password' => $request->password
         ];
         if (Auth::attempt($data)) {
-            return redirect()->route('user.home')->with('success', 'signed in successfully');
+            return redirect()->route('user.dashboard')->with('success', 'Signed in successfully');
         } else {
             return redirect()->back()->with('error', 'Your email or password is incorrect!')->withInput();
         }
@@ -79,6 +76,6 @@ class AuthController extends Controller
         auth()->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('#')->with('success', 'logged out successfully');
+        return redirect()->route('signin.layout')->with('success', 'Logged out successfully');
     }
 }
