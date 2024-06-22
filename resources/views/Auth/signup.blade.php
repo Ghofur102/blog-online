@@ -17,7 +17,7 @@
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <img src="{{ asset('img/signup.png') }}" class="img-fluid" alt="Signup image">
                 </div>
-                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 border rounded px-5 py-5">
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 shadow border rounded px-5 py-5">
                     <h3 class="mb-5">Sign Up</h3>
                     <form action="{{ route('signup.process') }}" method="POST">
                         @csrf

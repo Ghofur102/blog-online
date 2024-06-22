@@ -7,7 +7,12 @@
     <title>SignIn Page | Online Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <style>
+        .shadow-right {
+            box-shadow: 0 3px 6px  rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    </head>
 
 <body>
 
@@ -18,7 +23,7 @@
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
                         class="img-fluid" alt="Signin image">
                 </div>
-                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 border rounded px-5 py-5">
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 shadow border rounded px-5 py-5">
                     <h3 class="mb-5">Sign In</h3>
                     @include('Template.alert')
 
