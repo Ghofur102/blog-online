@@ -73,24 +73,25 @@
                     </div>
                     <hr>
                     <div class="list-group list-group-flush mx-3 mt-4">
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
-                            aria-current="true">
-                            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center" aria-current="true">
+                            <span>Dashboard</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
-                            <i class="fas fa-chart-area fa-fw me-3"></i><span>Webiste traffic</span>
+                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center">
+                            <span>Report</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-lock fa-fw me-3"></i><span>Password</span></a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center">
+                            <span>Seri Blog Admin</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center">
+                            <span>Blog Admin</span>
+                        </a>
                     </div>
                 </div>
             </nav>
             <!-- Sidebar -->
             <!-- OffCanvas -->
-            <button class="btn btn-primary m-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
+            <button class="btn btn-primary m-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -112,17 +113,19 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="list-group list-group-flush mx-3 mt-4">
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple"
                             aria-current="true">
-                            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+                            <span>Dashboard</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
-                            <i class="fas fa-chart-area fa-fw me-3"></i><span>Webiste traffic</span>
+                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple">
+                            <span>Report</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-lock fa-fw me-3"></i><span>Password</span></a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple">
+                            <span>Seri Blog Admin</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple">
+                            <span>Blog Admin</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -130,14 +133,12 @@
         <!--Main Navigation-->
 
         <!--Main layout-->
-        <main style="margin-top: 58px;">
-            <div class="container pt-4"></div>
+        <main class="pt-2">
+            <div class="container">
+                @yield('main')
+            </div>
         </main>
         <!--Main layout-->
-        <!-- Content -->
-        <div id="content">
-            @yield('main')
-        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

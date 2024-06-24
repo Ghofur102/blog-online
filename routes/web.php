@@ -39,3 +39,7 @@ Route::get('/reset-password/{token}', function (string $token) {
     return view('auth.reset-password', ['token' => $token]);
 })->middleware('guest')->name('password.reset');
 Route::post('/reset-password', [ForgotPasswordController::class, 'reset_password'])->middleware('guest')->name('password.update');
+
+Route::get('/add-blog', function () {
+    return view('Admin.addBlogPage');
+});
