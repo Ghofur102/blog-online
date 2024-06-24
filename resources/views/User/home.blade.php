@@ -14,8 +14,8 @@
                             </p>
                         </div>
                         <div class="mt-5">
-                                <a href="#update" class="btn btn-primary rounded shadow">Read Article</a>
-                                <a href="{{ route('signin.layout') }}" class="btn btn-outline-primary rounded shadow">Sign In</a>
+                            <button class="btn btn-primary rounded shadow">Read Article</button>
+                            <button class="btn btn-outline-primary rounded shadow">Sign In</button>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
     <!-- Category End -->
 
     <!-- Update Start -->
-    <div class="update my-5 mx-5" id="update">
+    <div class="category my-5 mx-5">
         <h3 class="text-decoration-underline">Update</h3>
         <h2>What's New?</h2>
         <div class="list-blog">
@@ -369,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
