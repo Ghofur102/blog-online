@@ -6,53 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: #fbfbfb;
-        }
-
-        @media (min-width: 991.98px) {
-            main {
-                padding-left: 240px;
-            }
-        }
-
-        /* Sidebar */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            padding: 58px 0 0;
-            /* Height of navbar */
-            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-            width: 240px;
-            z-index: 600;
-        }
-
-        @media (max-width: 991.98px) {
-            .sidebar {
-                width: 100%;
-            }
-        }
-
-        .sidebar .active {
-            border-radius: 5px;
-            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-        }
-
-        .sidebar-sticky {
-            position: relative;
-            top: 0;
-            height: calc(100vh - 48px);
-            padding-top: 0.5rem;
-            overflow-x: hidden;
-            overflow-y: auto;
-            /* Scrollable contents if viewport is shorter than content. */
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/templateAdmin.css') }}">
 </head>
 
 <body>
@@ -64,8 +20,8 @@
             <nav id="sidebarMenu" class="collapse d-lg-block sidebar bg-white">
                 <div class="position-sticky">
                     <div class="d-flex mx-3">
-                        <img src="{{ asset('pemandangan.jpg') }}" class="rounded-circle" width="70px" height="70px"
-                            alt="">
+                        <img src="{{ asset('img/logo.png') }}" style="width: 70px;height:70px;"
+                            class="rounded-circle shadow" alt="">
                         <div class="mx-3">
                             Username <br>
                             Admin
@@ -73,18 +29,18 @@
                     </div>
                     <hr>
                     <div class="list-group list-group-flush mx-3 mt-4">
-                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center" aria-current="true">
-                            <span>Dashboard</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center">
-                            <span>Report</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center">
-                            <span>Seri Blog Admin</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 ripple text-center">
-                            <span>Blog Admin</span>
-                        </a>
+                        <div class="py-3 ripple text-center" aria-current="true">
+                            <button class="btn btn-white  p-2 button-primary w-100">Dashboard</button>
+                        </div>
+                        <div class="py-3 ripple text-center">
+                            <button class="btn btn-white p-2 button-secc w-100">Report</button>
+                        </div>
+                        <div class="py-3 ripple text-center">
+                            <button class="btn btn-white  p-2 button-secc w-100">Seri Blog Admin</button>
+                        </div>
+                        <div class="py-3 ripple text-center">
+                            <button class="btn btn-white  p-2 button-secc w-100">Blog Admin</button>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -102,8 +58,8 @@
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                     <div class="d-flex mx-3">
-                        <img src="{{ asset('pemandangan.jpg') }}" class="rounded-circle" width="70px" height="70px"
-                            alt="">
+                        <img src="{{ asset('img/logo.png') }}" class="rounded-circle shadow" width="70px"
+                            height="70px" alt="">
                         <div class="mx-3">
                             Username <br>
                             Admin
@@ -113,19 +69,18 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="list-group list-group-flush mx-3 mt-4">
-                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple"
-                            aria-current="true">
-                            <span>Dashboard</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple">
-                            <span>Report</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple">
-                            <span>Seri Blog Admin</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 text-center ripple">
-                            <span>Blog Admin</span>
-                        </a>
+                        <div class="py-3 ripple text-center" aria-current="true">
+                            <button class="btn btn-white  p-2 button-primary w-100">Dashboard</button>
+                        </div>
+                        <div class="py-3 ripple text-center">
+                            <button class="btn btn-white  p-2 button-secc w-100">Report</button>
+                        </div>
+                        <div class="py-3 ripple text-center">
+                            <button class="btn btn-white  p-2 button-secc w-100">Seri Blog Admin</button>
+                        </div>
+                        <div class="py-3 ripple text-center">
+                            <button class="btn btn-white  p-2 button-secc w-100">Blog Admin</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,6 +98,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script src="{{ asset('js/inputblog.js') }}"></script>
+    <script src="{{ asset('js/previewimage.js') }}"></script>
 </body>
 
 </html>

@@ -43,3 +43,6 @@ Route::post('/reset-password', [ForgotPasswordController::class, 'reset_password
 Route::get('/add-blog', function () {
     return view('Admin.addBlogPage');
 });
+Route::get('/edit-blog', function () {
+    return view('Admin.editBlogPage');
+});

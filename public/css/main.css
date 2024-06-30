@@ -1,0 +1,27 @@
+.button-secc {
+    box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    background-color: #D9D9D9;
+}
+.btn-primary {
+    box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    background-color: #53B7F1;
+    color: white;
+}
+.btn-secondary {
+    box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    background-color: #8277F7;
+    color: white;
+}
+.button-primary {
+    box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.44);
+    background-color: #53B7F1;
+    color: white;
+}
