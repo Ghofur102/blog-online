@@ -46,3 +46,6 @@ Route::get('/add-blog', function () {
 Route::get('/edit-blog', function () {
     return view('Admin.editBlogPage');
 });
+Route::get('/detail-seri-blog', function () {
+    return view('User.detailSeriBlog');
+});
